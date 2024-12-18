@@ -71,17 +71,21 @@
   margin-top: 124px;
 }
 
-.header__image {
-  position: absolute;
-}
-
-.nav__logo {
-  position: relative;
-}
-
 .header__footer {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
   margin-top: auto;
+}
+.header__footer_hours {
+  justify-content: flex-start;
+  margin-left: 80px;
+  margin-bottom: 40px;
+  color: #6f6f6f;
+}
+.header__footer_address {
+  justify-content: flex-end;
+  margin-right: 80px;
+  margin-bottom: 40px;
+  color: #6f6f6f;
 }
