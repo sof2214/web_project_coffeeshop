@@ -54,13 +54,9 @@
   line-height: 20px;
 }
 
-.header__content {
-  display: flex;
-  max-width: 638px;
-}
-
 .header__title {
   display: flex;
+  flex-wrap: wrap;
   max-width: 709px;
   padding-bottom: 28px;
   padding-top: 183px;
@@ -93,6 +89,7 @@
 
 .header__image {
   position: absolute;
+  right: 15%;
   width: 646px;
   height: 568px;
   margin-right: 5px;
