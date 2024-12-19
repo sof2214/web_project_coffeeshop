@@ -1,4 +1,5 @@
 .page {
+  display: flex;
   max-width: 1600px;
   min-width: 1100px;
   width: 100%;
@@ -6,19 +7,21 @@
   font-family: "inter", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
-  background-image: url(/images/background_header.svg);
-  background-position: center;
-  background-size: cover;
 }
 
 .header {
-  max-height: 800px;
-  min-height: 720px;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  position: relative;
-  box-sizing: border-box;
+  background-color: #ffffff;
+  background-image: url("../images/background_header.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 30px 80px 40px;
+  max-width: 100%;
+  min-height: 720px;
+  max-height: 800px;
+  flex: 1;
 }
 .nav {
   display: flex;
@@ -49,6 +52,11 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+}
+
+.header__content {
+  display: flex;
+  max-width: 638px;
 }
 
 .header__title {
@@ -83,11 +91,8 @@
   line-height: 30px;
 }
 
-.header__content {
-  max-width: 638px;
-}
-
 .header__image {
+  position: absolute;
   width: 646px;
   height: 568px;
   margin-right: 5px;
