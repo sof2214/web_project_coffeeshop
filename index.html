@@ -29,52 +29,58 @@
     <title>Cafeteria de tripleten</title>
   </head>
   <body>
-    <div class="page">
-      <header class="header">
-        <nav class="nav">
+    <main class="page">
+      <section class="header">
+        <header class="header">
+          <nav class="nav">
+            <img
+              src="images/logo_coffeeshop_dark.svg"
+              alt="Logo Triple Espresso"
+              class="nav__logo"
+            />
+            <ol class="nav__links">
+              <li>
+                <a href="#recipes" class="nav__link">Recetas</a>
+              </li>
+              <li>
+                <a href="#reservacion" class="nav__link">Reservar una mesa</a>
+              </li>
+              <li>
+                <a href="#contactos" class="nav__link">Contactos</a>
+              </li>
+            </ol>
+          </nav>
+
+          <h1 class="header__title">
+            <span class="header__span-accent">Café de especialidad</span>
+            &nbsp; en Triple Peaks
+          </h1>
+
+          <p class="header__description">
+            ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
+            para darte energía y motivar tu creatividad.
+          </p>
+
           <img
-            src="images/logo_coffeeshop_dark.svg"
-            alt="Logo Triple Espresso"
-            class="nav__logo"
+            class="header__image"
+            src="/images/inside_coffee_shop.png"
+            alt="Foto de una Cafeteria"
           />
-          <ul class="nav__links">
-            <il> <a href="#recipes" class="nav__link">Recetas</a></il>
-            <il
-              ><a href="#reservacion" class="nav__link">Reservar una mesa</a>
-            </il>
-            <il><a href="#contactos" class="nav__link">Contactos</a></il>
-          </ul>
-        </nav>
 
-        <h1 class="header__title">
-          <span class="header__span-accent">Café de especialidad</span>
-          &nbsp; en Triple Peaks
-        </h1>
+          <div class="header__footer">
+            <p class="header__footer header__footer_hours">
+              Horario: <br />Lunes a Viernes (de 10:00h a 19:00h) <br />Sábados
+              y Domingos (de 11:00h a 18:00h)
+            </p>
+            <p class="header__footer header__footer_address">
+              Avenida del Éxito 200, Ciudad Triple Peaks
+            </p>
+          </div>
+        </header>
+      </section>
 
-        <p class="header__description">
-          ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
-          para darte energía y motivar tu creatividad.
-        </p>
-
-        <img
-          class="header__image"
-          src="/images/inside_coffee_shop.png"
-          alt="Foto de una Cafeteria"
-        />
-
-        <div class="header__footer">
-          <p class="header__footer header__footer_hours">
-            Horario: <br />Lunes a Viernes (de 10:00h a 19:00h) <br />Sábados y
-            Domingos (de 11:00h a 18:00h)
-          </p>
-          <p class="header__footer header__footer_address">
-            Avenida del Éxito 200, Ciudad Triple Peaks
-          </p>
-        </div>
-      </header>
-
-      <main class="content">
-        <section class="recipes" id="recipes">
+      <section class="content">
+        <div class="recipes" id="recipes">
           <h2 class="recipes__title">Recetas</h2>
           <h3 class="recipes__subtitle">
             Echa un vistazo a las recetas que hemos reunido para que elabores
@@ -106,11 +112,11 @@
               </p>
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
       <section class="reservation"></section>
 
       <footer class="footer"></footer>
-    </div>
+    </main>
   </body>
 </html>
