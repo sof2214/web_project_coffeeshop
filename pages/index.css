@@ -202,63 +202,83 @@
 }
 
 .reservation {
+  display: flex;
+  flex-direction: column;
   background-color: #d9e7ff;
-  background-image: url(/images/background_reservation.svg);
+  background-image: url("../images/background_reservation.svg");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+  background-position: center;
+  padding: 100px 80px 120px;
+  max-width: 100%;
+  /*color:#FFFFFF;*/
+  /*max-height: 800px;*/
+  flex: 1;
+  align-items: center;
 }
 
 .reservation__title {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 100px;
-  padding-bottom: 80px;
-  color: #000000;
-  font-family: Inter;
-  font-style: normal;
+  text-align: center;
+  margin: 0 auto 80px;
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
 }
 
-.form__fieldset {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.reservation__form {
+  width: 385px;
+}
+
+.form {
   max-width: 385px;
-  margin-bottom: 120px;
 }
 
-.form__label {
-  font-family: Inter;
-  font-style: normal;
+.form__item {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.form__item_label {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
 }
 
-.form__input {
-  border-radius: 4px;
-  font-family: Inter;
-  font-style: normal;
+.form__item_input {
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
+  width: 365px;
+  height: 45px;
+  margin: 8px 0 32px;
+  border-radius: 4px;
+  padding-top: 15px;
+  padding-left: 20px;
 }
 
-.form__button {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 500;
+.form__item_button {
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 500;
+  width: 385px;
+  height: 60px;
+  margin-bottom: 32px;
+  border-radius: 4px;
+  background-color: #2f80ed;
+  color: #ffffff;
 }
-.form__button:hover {
+
+.form__item_button:hover {
   opacity: 70%;
 }
 
-.form_checkbox {
+.form__item_container_checkbox {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.form__item_container_checkbox-checkbox {
   border-radius: 2px;
 }
