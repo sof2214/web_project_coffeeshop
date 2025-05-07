@@ -7,3 +7,74 @@
   font-family: "Inter", Arial, Helvetica, sans-serif;
   background-color: #ffffff;
 }
+
+.header{
+  position: relative;
+  height: 100vh;
+  max-height: 800px;
+  min-height: 720px;
+
+
+}
+
+.nav{
+position: absolute;
+color: #000000;
+  font-family: "Inter";
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+}
+
+.header__logo{
+  left: 30px;
+  top: 30px;
+  width: 105px;
+  height: 39px;
+}
+
+.nav__links{
+  top: 30px;
+  right: 80px;
+  gap: 20px;
+
+}
+
+
+.header__title{
+  position: absolute;
+  left:80px;
+  top: 183px;
+  max-width: 708px;
+}
+
+.header__span-acent{
+  font-family: Noto "Serif";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 58px;
+line-height: 72px;
+color: #2F80ED;
+}
+
+.header__description{
+  position: absolute;
+  max-width: 683px;
+  padding-left: 80px;
+  padding-top: 28px;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.header__image{
+  position: absolute;
+  width: 646px;
+  height: 568px;
+  right: 5px;
+  top: 124px;
+}
+
