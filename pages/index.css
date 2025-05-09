@@ -44,9 +44,14 @@ line-height: 20px;
 }
 
 .nav__links{
+  display: flex;
+  flex-direction: row;
   padding-top: 30px;
   padding-right: 80px;
   gap: 20px;
+  list-style-type: none;
+  
+
 
 }
 
