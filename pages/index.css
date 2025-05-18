@@ -154,8 +154,9 @@ line-height: 30px;
 
 .recipes__videos{
   display: flex;
-    justify-content: center;
-    column-gap: 40px;
+  flex-direction: row-reverse;
+  justify-content: center;
+    gap: 40px;
     margin-top: 80px;
     padding-bottom: 215px;
 
@@ -164,8 +165,8 @@ line-height: 30px;
 .recipes__video-item{
   display: flex;
   column-gap: 24px;
-  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 iframe{
@@ -177,8 +178,8 @@ iframe{
 .recipes__video-caption {
   margin-top: 24px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-self: flex-end;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -188,16 +189,15 @@ iframe{
 }
 
 .reservation{
+  color:#000000;
   background-color:#D9E7FF;
   background-image: url(../images/background_reservation.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-}
-
-.reservation__form{
-  display: ;
+  display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .reservation__title{
@@ -206,8 +206,83 @@ font-style: normal;
 font-weight: 500;
 font-size: 44px;
 line-height: 52px;
-padding-top: 100px;
-padding-bottom: 80px;
 }
 
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  border-style: none;
+  padding: 0px;
+}
+
+.reservation__form{
+  max-width: 385px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 120px;
+  }
+
+  .form__input{
+    height: 60px;
+    margin-bottom: 32px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 20px;
+    font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+  }
+
+.form__label{
+  margin-bottom:   8px;
+  font-family: Inter;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+}
+
+.form__handlers{
+  border-style: none;
+}
+
+.form__button{
+  height: 60px;
+  max-width: 385px;
+  width: 100%;
+  margin-bottom: 32px;
+  font-family: Inter;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+background-color: #2f80ed;
+color: #ffffff;
+border-radius: 4px;
+}
+
+.form__button:hover{
+  opacity: 70%;
+}
+
+.form__footer{
+  border-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__checkbox{
+  height: 20px;
+  width: 20px;
+  margin-right: 12px;
+  border-radius: 2px;
+}
+
+.form__checkbox:checked{
+  background-color: #2F80ED;
+  background-image: url(../images/check.svg);
+}
 
