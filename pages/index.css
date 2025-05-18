@@ -50,7 +50,7 @@ line-height: 20px;
   padding-right: 80px;
   gap: 20px;
   list-style-type: none;
-  
+
 
 
 }
@@ -186,3 +186,28 @@ iframe{
   line-height: 30px;
   color: #ffffff;
 }
+
+.reservation{
+  background-color:#D9E7FF;
+  background-image: url(../images/background_reservation.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.reservation__form{
+  display: ;
+}
+
+.reservation__title{
+  font-family: Inter;
+font-style: normal;
+font-weight: 500;
+font-size: 44px;
+line-height: 52px;
+padding-top: 100px;
+padding-bottom: 80px;
+}
+
+
