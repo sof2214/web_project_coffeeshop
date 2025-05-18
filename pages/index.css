@@ -208,11 +208,13 @@ font-size: 44px;
 line-height: 52px;
 }
 
+.form{
+  max-width: 385px;
+}
 .form__fieldset {
-  display: flex;
-  flex-direction: column;
-  border-style: none;
-  padding: 0px;
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .reservation__form{
@@ -224,7 +226,7 @@ line-height: 52px;
 
   .form__input{
     height: 60px;
-    margin-bottom: 32px;
+    margin: 0 0 32px;
     box-sizing: border-box;
     width: 100%;
     padding: 15px 20px;
@@ -233,9 +235,16 @@ font-style: normal;
 font-weight: normal;
 font-size: 20px;
 line-height: 30px;
+border-radius: 4px;
+border-color: #838383;
+  }
+
+  .form__input::placeholder {
+    color: #838383;
   }
 
 .form__label{
+  display: block;
   margin-bottom:   8px;
   font-family: Inter;
 font-style: normal;
@@ -244,14 +253,11 @@ font-size: 16px;
 line-height: 20px;
 }
 
-.form__handlers{
-  border-style: none;
-}
-
 .form__button{
   height: 60px;
   max-width: 385px;
   width: 100%;
+  padding: 0 100px;
   margin-bottom: 32px;
   font-family: Inter;
 font-style: normal;
@@ -267,18 +273,22 @@ border-radius: 4px;
   opacity: 70%;
 }
 
-.form__footer{
-  border-style: none;
+.form__fieldset_el_center {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.form__checkbox{
-  height: 20px;
-  width: 20px;
-  margin-right: 12px;
+.form__lable_direction_right {
+  display: inline;
+  margin-left: 12px;
+}
+
+.form__checkbox {
   border-radius: 2px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .form__checkbox:checked{
