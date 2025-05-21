@@ -1,61 +1,90 @@
-.footer{
-  background-color: #0A2850 ;
+.footer {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  overflow: hidden;
+  background-color: #0a2850;
 }
 
-.footer__content{
-padding: 60px 108px 80px;
+.footer__circle {
+  position: absolute;
+  border-radius: 100%;
+  background-color: #2f80ed;
+  width: 340px;
+  height: 340px;
+  top: -128px;
+  left: -44px;
+  z-index: 0;
 }
 
-.footer__logo{
-  height: 39px;
+.footer__content {
+  margin: 60px 80px 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.footer__logo {
   width: 105px;
+  height: 39px;
 }
 
-.footer__circle{
-
-}
-
-.footer__social{
-  color: #ffffff;
-}
-
-.footer__social-heading{
+.footer__social {
   display: flex;
-  justify-content: flex-end;
-  padding-bottom: 20px;
-font-family: "Inter";
-font-style: normal;
-font-weight: bold;
-font-size: 16px;
-line-height: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
 }
 
-.footer__list-item{
+.footer__social-heading {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__list {
+  list-style-type: none;
+  margin: 20px 0 0;
+  padding: 0;
   display: flex;
-  justify-content: flex-end;
-  padding-bottom: 16px;
-color: #ffffff;
-list-style: none;
-font-family: "Inter";
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 20px;
+  flex-direction: column;
 }
 
-.footer__social-icon{
-  padding-right: 10px;
-  height: 16px;
+.footer__list-item {
+  align-items: center;
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.footer__list-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.footer__social-icon {
   width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }
 
-.footer__copyright{
-  padding-bottom: 60px;
-  padding-left: 80px;
-  color: #ffffff;
-  font-family: "Inter";
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 20px;
+.footer__social-link {
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__social-link:hover {
+  color: #c1c1c1;
+}
+
+.footer__copyright {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 108px 80px 60px;
 }
