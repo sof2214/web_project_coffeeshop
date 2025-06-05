@@ -57,7 +57,7 @@ iframe{
   margin-top: 24px;
   display: flex;
   flex-direction: column;
-  justify-self: flex-end;
+  justify-self: center;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;

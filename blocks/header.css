@@ -53,13 +53,16 @@
     line-height: 30px;
   }
 
-  .header__image{
-    position: absolute;
-    width: 646px;
-    height: 568px;
-    right: 5px;
-    top: 124px;
-  }
+  .header__image {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 646px;
+  height: 568px;
+  top: 124px;
+  right: 5px;
+}
 
   .header__footer{
     margin-top: auto;
