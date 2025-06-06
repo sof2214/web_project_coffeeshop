@@ -1,4 +1,7 @@
 .header{
+   display:flex;
+  flex-direction: column;
+  position:relative;
   height: 100vh;
   max-height: 800px;
   min-height: 720px;
@@ -8,10 +11,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display:flex;
-  flex-direction: column;
-
-
 }
 
 .header__logo{
@@ -54,37 +53,34 @@
   }
 
   .header__image {
-  position: absolute;
   display: flex;
   flex-direction: column;
-  position: absolute;
   width: 646px;
   height: 568px;
+  position: absolute;
   top: 124px;
   right: 5px;
 }
+.header__schedule {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 40px;
+  left: 80px;
+}
 
-  .header__footer{
-    margin-top: auto;
-      padding-bottom: 40px;
-      padding-left: 80px;
-      margin-right: 80px;
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      box-sizing: border-box;
-      z-index: 1;
+.header__paragraph {
+  font-family: "Inter", Arial, Sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #838383;
+  margin: 0;
+}
 
-
-  }
-
-  .header__paragraph {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #838383;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
+.header__address {
+  position: absolute;
+  right: 80px;
+  bottom: 40px;
+}
